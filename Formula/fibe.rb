@@ -5,20 +5,20 @@
 class Fibe < Formula
   desc "Official Go SDK, CLI, and MCP server for the Fibe platform"
   homepage "https://github.com/fibegg/sdk"
-  version "0.2.16"
+  version "0.2.17"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fibegg/sdk/releases/download/v0.2.16/fibe_0.2.16_darwin_amd64.tar.gz"
-      sha256 "95804a6f03b600e681d7a1e6271e035647c822254436d5a7e9f32005d47cfb24"
+      url "https://github.com/fibegg/sdk/releases/download/v0.2.17/fibe_0.2.17_darwin_amd64.tar.gz"
+      sha256 "fa366e3bb5eb0ac805be1077b92b60483b9191b83e4fc2b8b11fe65d5d4a7f6f"
 
       define_method(:install) do
         bin.install "fibe"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fibegg/sdk/releases/download/v0.2.16/fibe_0.2.16_darwin_arm64.tar.gz"
-      sha256 "ee58d781a0b081c9d83b9548c33678c83a1920bfe596f992fd117047d5d14bb9"
+      url "https://github.com/fibegg/sdk/releases/download/v0.2.17/fibe_0.2.17_darwin_arm64.tar.gz"
+      sha256 "7aab8ce58eb266e8acf712d5588bbbc9bfdcda96b6f1a7d6f95154b9f1cb190a"
 
       define_method(:install) do
         bin.install "fibe"
@@ -28,15 +28,15 @@ class Fibe < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fibegg/sdk/releases/download/v0.2.16/fibe_0.2.16_linux_amd64.tar.gz"
-      sha256 "3265688d0e5a1bfa4db314d6f171261c644c695295d60c2d1274d31a1315355a"
+      url "https://github.com/fibegg/sdk/releases/download/v0.2.17/fibe_0.2.17_linux_amd64.tar.gz"
+      sha256 "b80bb4fc060338dc908d53c9916c7d4aa71313c7ca7733043859151ae7137dfa"
       define_method(:install) do
         bin.install "fibe"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fibegg/sdk/releases/download/v0.2.16/fibe_0.2.16_linux_arm64.tar.gz"
-      sha256 "e9b4ca47a9b6f607e6bb4f95617b597eb46f34bb80e4a70cb6126d008996951e"
+      url "https://github.com/fibegg/sdk/releases/download/v0.2.17/fibe_0.2.17_linux_arm64.tar.gz"
+      sha256 "95636848ccbf43104f4447576341df899909e06f75960456a763459f0fb294e6"
       define_method(:install) do
         bin.install "fibe"
       end
